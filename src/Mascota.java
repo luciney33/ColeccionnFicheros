@@ -1,5 +1,12 @@
 import java.util.Random;
 
+/*Define la clase Mascota con atributos: nombre, edad y especie.
+Tiene varios constructores:
+Uno aleatorio que asigna valores desde Constantes.
+Uno que crea una Mascota desde una línea de texto (Mascota(String linea)).
+Uno manual (Mascota(String nombre, int edad, String especie)).
+Implementa Comparable<Mascota> para ordenar las mascotas por edad.*/
+
 public class Mascota implements Comparable<Mascota>{
     private String nombre;
     private int edad;
@@ -55,6 +62,6 @@ public class Mascota implements Comparable<Mascota>{
 
     @Override
     public int compareTo(Mascota mascota) {
-        return Integer.compare(this.getEdad(), mascota.getEdad());// eso es por edad pero podria ser por especie, nombre
+        return Integer.compare(this.getEdad(), mascota.getEdad());// eso es por edad pero podria ser por especie, nombre y si fuesen igual devolveria un 0
     }
 }

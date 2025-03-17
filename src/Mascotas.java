@@ -4,6 +4,14 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/*Administra una lista de Mascota.
+Si el archivo mascotas.txt existe, carga las mascotas desde el archivo.
+Si no existe, genera 10 mascotas aleatorias.
+Métodos:
+listar(String especie): Muestra solo las mascotas de una especie específica.
+modificarMascota(String nombre): Modifica la edad de una mascota con un nombre específico.
+ordenar(): Ordena las mascotas por edad.*/
+
 public class Mascotas {
     private List<Mascota> mascotas; // se pone list y no arraylist, porque puede que queramos crear una instancia de vector, arraylist...
     public Mascotas() {
