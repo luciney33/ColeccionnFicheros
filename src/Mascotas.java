@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/*Administra una lista de Mascota.
+/*Administra una lista de Mascota.(Arraylist)
 Si el archivo mascotas.txt existe, carga las mascotas desde el archivo.
 Si no existe, genera 10 mascotas aleatorias.
 Métodos:

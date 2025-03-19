@@ -16,12 +16,12 @@ public class GestionFicheros {
         PrintWriter escribir = null;
         try {
             escribir = new PrintWriter(fichero); //con el new abre el fichero
+            for (int i = 0; i < lista.size(); i++) {
+                escribir.println(lista.get(i).toStringFichero()); //tostring modificado en mascota
+                escribir.close();// SI o SI cerrarlo en cada fichero que se toque
+            }
         } catch (FileNotFoundException e) {
             System.out.println("No se puede escribir el fichero, no se pudo encontrar");
-        }
-        for (int i = 0; i < lista.size(); i++) {
-            escribir.println(lista.get(i).toStringFichero()); //tostring modificado en mascotas
-            escribir.close();// SI o SI cerrarlo en cada fichero que se toque
         }
     }
 
